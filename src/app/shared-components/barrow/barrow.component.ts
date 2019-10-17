@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { BorrowBooks } from 'library_frontend/src/app/models/borrow.model';
+import { BorrowBooks } from 'src/app/models/borrow.model';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { BookService } from 'src/app/book.service';
 
