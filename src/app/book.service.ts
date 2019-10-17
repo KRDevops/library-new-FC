@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BooksList } from './models/listBooks.model';
-import { BorrowBooks } from 'library_frontend/src/app/models/borrow.model';
+import { BorrowBooks } from 'src/app/models/borrow.model';
 
 @Injectable({
   providedIn: 'root'
