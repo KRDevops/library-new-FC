@@ -1,0 +1,60 @@
+<!-- <div class="container">
+    <h2 class="text-success">Add Book </h2>
+    <form [formGroup]="addBooksForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="bookName">Book Name : </label>
+            <input style="width: 500px" type="text" class="form-control" id="bookName" placeholder="Enter name"
+                formControlName="bookName" name="bookName"
+                [ngClass]="{ 'is-invalid': submitted && f.bookName.errors }" />
+            <div *ngIf="submitted && f.bookName.errors" class="invalid-feedback">
+                <div *ngIf="f.bookName.errors.required">Name is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="authorName">Author Name : </label>
+            <input style="width: 500px" type="text" class="form-control" formControlName="authorName" id="authorName"
+                placeholder="Enter authorName" name="authorName">
+        </div>
+        <div class="form-group">
+            <label for="genre">Email : </label>
+            <input style="width: 500px" type="text" class="form-control" formControlName="genre" id="genre"
+                placeholder="Enter genre" name="genre" [ngClass]="{ 'is-invalid': submitted && f.genre.errors }" />
+            <div *ngIf="submitted && f.genre.errors" class="invalid-feedback">
+                <div *ngIf="f.genre.errors.required">genre is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating : </label>
+            <input style="width: 500px" type="rating" class="form-control" formControlName="rating" id="rating"
+                placeholder="Enter rating" name="pswd" [ngClass]="{ 'is-invalid': submitted && f.rating.errors }" />
+            <div *ngIf="submitted && f.rating.errors" class="invalid-feedback">
+                <div *ngIf="f.rating.errors.required">Password is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bookStatus">Book Status : </label>
+            <input style="width: 500px" type="text" class="form-control" formControlName="bookStatus" id="bookStatus"
+                placeholder="Enter bookStatus" name="bookStatus">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div> -->
+
+<form [formGroup]="addBooksForm" (ngSubmit)="addBook()">
+    <div class="form">
+        <h3 class="text-warning" style="margin-left: 150px"> Add Books </h3>
+        <app-input [name]="'bookName'" [placeholder]="'bookName'" [formGroup]="addBooksForm"></app-input>
+        <app-input [name]="'authorName'" [placeholder]="'authorName'" [formGroup]="addBooksForm"></app-input>
+        <app-input [name]="'genre'" [placeholder]="'genre'" [formGroup]="addBooksForm"></app-input>
+        <app-input [name]="'rating'" [placeholder]="'rating'" [formGroup]="addBooksForm">
+        </app-input>
+
+
+
+        <div class="panel-footer ml-4">
+            <button class="btn btn-success" type="submit" id="save"> Save </button>
+        </div>
+    </div>
+</form>
