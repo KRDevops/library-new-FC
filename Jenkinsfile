@@ -32,7 +32,7 @@ pipeline {
             steps {
 
                 sh '''
-                cd /var/lib/jenkins/workspace/fff/dist
+                cd /var/lib/jenkins/workspace/ffff/dist
                 chmod -R 777 AngularProject
                 cp -rf AngularProject /opt/apache-tomcat-9.0.26/webapps/
             '''
