@@ -30,7 +30,7 @@ pipeline {
   stage('Deploy') { 
 
             steps {
-                   ...
+                   '''
                      }
   }
       stage('Deploy') {
