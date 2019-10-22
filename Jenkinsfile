@@ -30,6 +30,12 @@ pipeline {
   stage('Deploy') { 
 
             steps {
+                   ...
+                     }
+  }
+      stage('Deploy') {
+        steps { 
+          
 
                 sh '''
                 cd /var/lib/jenkins/workspace/ffff/dist
@@ -42,5 +48,4 @@ pipeline {
         }
 
     }
-
 }
