@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                git url:'https://github.com/jyotheesh/library-new-FC.git'
+                git url:'https://github.com/KRDevops/library-new-FC.git'
 
             }
 
